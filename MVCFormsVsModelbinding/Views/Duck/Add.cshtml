@@ -1,7 +1,22 @@
 ﻿
 @{
-    ViewData["Title"] = "Add";
+    ViewData["Title"] = "Add new Duck";
 }
 
-<h1>Add</h1>
+<h1>Add new Duck</h1>
 
+<form method="post">
+    <label>Name</label>
+    <input type="text" name="name" />
+    <br />
+
+    <label>Color</label>
+    <input type="text" name="color" />
+    <br />
+
+    <label>Catchphrase</label>
+    <input type="text" name="catchphrase" />
+    <br />
+
+    <input type="submit" value="Add Duck" />
+</form>
