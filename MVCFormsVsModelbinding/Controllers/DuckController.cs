@@ -29,7 +29,7 @@ namespace MVCFormsVsModelbinding.Controllers
 
             // Add to database
 
-            ViewData["Added"] = du.Name + "was added with an ID of 1";
+            ViewData["Added"] = du.Name + " was added with an ID of 1";
 
             return View();
         }
@@ -45,7 +45,7 @@ namespace MVCFormsVsModelbinding.Controllers
         {
             if (ModelState.IsValid) 
             {
-                ViewData["Message"] = $"{du.Name} was added";
+                ViewData["Message"] = du.Name + " was added with an ID of 1";
                 // Add to database
             }
             return View();
