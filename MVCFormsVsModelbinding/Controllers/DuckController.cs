@@ -9,7 +9,7 @@ namespace MVCFormsVsModelbinding.Controllers
     public class DuckController : Controller
     {
         /// <summary>
-        /// Adds a Duck object
+        /// Adds a Duck object to the database
         /// </summary>
         /// <returns></returns>
         public IActionResult Add()
