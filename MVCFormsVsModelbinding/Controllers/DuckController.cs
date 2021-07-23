@@ -29,7 +29,7 @@ namespace MVCFormsVsModelbinding.Controllers
 
             // Add to database
 
-            ViewData["Added"] = du.Name + "was added with an ID of 8008";
+            ViewData["Added"] = du.Name + "was added with an ID of 1";
 
             return View();
         }
