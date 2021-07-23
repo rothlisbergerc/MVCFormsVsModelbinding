@@ -5,7 +5,7 @@
 
 <h1>Add a new Duck</h1>
 
-@if(ViewData["Added"] == null)
+@if (ViewData["Added"] == null)
 {
 <form method="post">
     <label>Name</label>
@@ -25,5 +25,7 @@
 }
 else
 {
+    <div class="alert alert-success">
     @ViewData["Added"]
+    </div>
 }

@@ -33,5 +33,22 @@ namespace MVCFormsVsModelbinding.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public IActionResult AddWithBinding()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddWithBinding(Duck du)
+        {
+            if (ModelState.IsValid) // True if all validation in model passes
+            {
+                ViewData["Message"] = $"{du.Name} was added";
+                // Add to database...
+            }
+            return View();
+        }
     }
 }
