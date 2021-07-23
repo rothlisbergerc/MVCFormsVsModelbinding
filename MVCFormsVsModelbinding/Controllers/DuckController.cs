@@ -43,10 +43,10 @@ namespace MVCFormsVsModelbinding.Controllers
         [HttpPost]
         public IActionResult AddWithBinding(Duck du)
         {
-            if (ModelState.IsValid) // True if all validation in model passes
+            if (ModelState.IsValid) 
             {
                 ViewData["Message"] = $"{du.Name} was added";
-                // Add to database...
+                // Add to database
             }
             return View();
         }
